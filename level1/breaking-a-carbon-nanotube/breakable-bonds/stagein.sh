@@ -12,3 +12,6 @@ url="https://raw.githubusercontent.com/lammpstutorials/lammpstutorials-inputs/${
 for f in input.lammps CH.airebo cnt_atom.data ; do
     curl -s "${url}/level1/breaking-a-carbon-nanotube/breakable-bonds/${f}" > "${f}"
 done
+
+# need to make one mod for the older lammps
+sed -i 's/^delete_atoms/#delete_atoms/' input.lammps

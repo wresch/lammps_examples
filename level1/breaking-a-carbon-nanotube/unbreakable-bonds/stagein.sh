@@ -11,3 +11,6 @@ url="https://raw.githubusercontent.com/lammpstutorials/lammpstutorials-inputs/${
 curl -s "${url}/level1/breaking-a-carbon-nanotube/unbreakable-bonds/input.lammps" > input.lammps
 curl -s "${url}/level1/breaking-a-carbon-nanotube/unbreakable-bonds/cnt_molecular.data" > cnt_molecular.data
 curl -s "${url}/level1/breaking-a-carbon-nanotube/unbreakable-bonds/parm.lammps" > parm.lammps
+
+# need to make one mod for the older lammps
+sed -i 's/^delete_atoms/#delete_atoms/' input.lammps
