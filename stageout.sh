@@ -1,4 +1,5 @@
 #! /bin/bash
+set -ex
 
 run="${1}"
 dest_prefix="${2}"
