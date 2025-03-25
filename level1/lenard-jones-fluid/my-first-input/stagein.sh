@@ -72,5 +72,6 @@ timestep 0.005
 run 10000
 __EOF__
 
-
+pwd
+ls -lh
 
