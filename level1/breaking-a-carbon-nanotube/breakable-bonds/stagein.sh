@@ -10,7 +10,7 @@ commit="4e249a6f7a0f8f8057bf72c07d39841a297e69a6"
 url="https://raw.githubusercontent.com/lammpstutorials/lammpstutorials-inputs/${commit}"
 
 for f in input.lammps CH.airebo cnt_atom.data ; do
-    curl -s "${url}/level1/breaking-a-carbon-nanotube/breakable-bonds/${f}" > "${f}"
+    wget -q -O "$f" "${url}/level1/breaking-a-carbon-nanotube/breakable-bonds/${f}"
 done
 
 # small modifications to the input file.
