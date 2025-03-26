@@ -2,6 +2,8 @@
 set -ex
 
 run="${1}"
-dest_prefix="${2}"
+dest="${2}"
 
-aws s3 sync  "${run}" "${dest_prefix}/${run}-${FB_WORKFLOW_ID}"
+if [[ -d  "${run}" && "${dest:-none}" != "none" && -d "${dest}" ]] ; then
+    tar -czf "${dest}/${FB_WORKFLOW_ID}-${run}.tar.gz" "${run}"
+fi
