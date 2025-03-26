@@ -13,4 +13,4 @@ curl -s "${url}/level1/breaking-a-carbon-nanotube/unbreakable-bonds/cnt_molecula
 curl -s "${url}/level1/breaking-a-carbon-nanotube/unbreakable-bonds/parm.lammps" > parm.lammps
 
 # need to make one mod for the older lammps
-sed -i 's/^delete_atoms/#delete_atoms/;s/^reset_atoms/^#reset_atoms/' input.lammps
+sed -i 's/^delete_atoms/#delete_atoms/;s/^reset_atoms/#reset_atoms/' input.lammps
