@@ -14,5 +14,5 @@ for f in input.lammps CH.airebo cnt_atom.data ; do
 done
 
 # small modifications to the input file.
-sed -i 's/^delete_atoms/#delete_atoms/;s/^reset_atoms/^#reset_atoms/; input.lammps
+sed -i 's/^delete_atoms/#delete_atoms/;s/^reset_atoms/^#reset_atoms/' input.lammps
 
