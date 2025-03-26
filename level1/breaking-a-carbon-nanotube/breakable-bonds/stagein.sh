@@ -1,4 +1,4 @@
-#! /bin/bash
+#! /bin/sh
 # adapted from https://github.com/lammpstutorials/lammpstutorials-inputs
 # This job runs the md part of the second lennard jones liquid example
 set -ex
