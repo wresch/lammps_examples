@@ -1,5 +1,5 @@
 #! /bin/sh
-# adapted from https://github.com/lammpstutorials/lammpstutorials-inputs
+# used to set up example from https://github.com/lammpstutorials/lammpstutorials-inputs
 set -ex
 
 run="${1}"
